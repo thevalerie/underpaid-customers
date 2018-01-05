@@ -1,8 +1,6 @@
 def find_underpaid_customers(source_file, melon_cost = 1.00):
-    """
-
-    - takes a file with customer order data
-    - prints the names, amounts paid, and amounts expected for any underpaid customers
+    """Takes a file with customer order data and a variable for the price per melon with a default value
+    Prints the names, amounts paid, and amounts expected for any underpaid customers
     """
 
     # open the file with customer order data
@@ -21,7 +19,6 @@ def find_underpaid_customers(source_file, melon_cost = 1.00):
         customer_name = customer_order[1]
         customer_melons = int(customer_order[2])
         customer_paid = float(customer_order[3])
-        #print customer_name, customer_melons, customer_paid
 
         # calculate amount total amount expected
         customer_expected = customer_melons * melon_cost
